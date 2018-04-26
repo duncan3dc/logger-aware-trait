@@ -22,9 +22,9 @@
         "satooshi/php-coveralls": "^1.0"
     },
     "autoload": {
-        "psr-4": {
-            "duncan3dc\\Log\\": "src/",
-            "duncan3dc\\LogTests\\": "tests/"
-        }
+        "psr-4": {"duncan3dc\\Log\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"duncan3dc\\LogTests\\": "tests/"}
     }
 }
