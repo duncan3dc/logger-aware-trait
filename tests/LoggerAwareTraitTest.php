@@ -11,7 +11,7 @@ class LoggerAwareTraitTest extends TestCase
 {
     private $class;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->class = new Class {
             use LoggerAwareTrait;
