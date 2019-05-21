@@ -30,7 +30,9 @@ class LoggerAwareTraitTest extends TestCase
     {
         $logger = new Class extends AbstractLogger {
             use LoggerAwareTrait;
-            public function log($level, $message, array $context = []) {}
+            public function log($level, $message, array $context = [])
+            {
+            }
         };
 
         $this->class->setLogger($logger);
@@ -41,7 +43,7 @@ class LoggerAwareTraitTest extends TestCase
 
     public function testChaining()
     {
-        $result = $this->class->setLogger(new NullLogger);
+        $result = $this->class->setLogger(new NullLogger());
         $this->assertSame($this->class, $result);
     }
 }
