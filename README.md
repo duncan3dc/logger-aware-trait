@@ -2,7 +2,7 @@
 A PSR-3 trait allowing any class to easily add logger support
 
 [![release](https://poser.pugx.org/duncan3dc/logger-aware-trait/version.svg)](https://packagist.org/packages/duncan3dc/logger-aware-trait)
-[![build](https://travis-ci.org/duncan3dc/logger-aware-trait.svg?branch=master)](https://travis-ci.org/duncan3dc/logger-aware-trait)
+[![build](https://github.com/duncan3dc/logger-aware-trait/workflows/.github/workflows/buildcheck.yml/badge.svg?branch=main)](https://github.com/duncan3dc/logger-aware-trait/actions?query=branch%3Amain+workflow%3A.github%2Fworkflows%2Fbuildcheck.yml)
 [![coverage](https://codecov.io/gh/duncan3dc/logger-aware-trait/graph/badge.svg)](https://codecov.io/gh/duncan3dc/logger-aware-trait)
 
 
