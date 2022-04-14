@@ -7,26 +7,26 @@ use PHPUnit\Framework\TestCase;
 use Psr\Log\AbstractLogger;
 use Psr\Log\NullLogger;
 
-class LoggerAwareTraitTest extends TestCase
+final class LoggerAwareTraitTest extends TestCase
 {
+    /** @var Logger */
     private $class;
+
 
     public function setUp(): void
     {
-        $this->class = new Class {
-            use LoggerAwareTrait;
-        };
+        $this->class = new Logger();
     }
 
 
-    public function testGetNullLogger()
+    public function testGetNullLogger(): void
     {
         $logger = $this->class->getLogger();
         $this->assertInstanceOf(NullLogger::class, $logger);
     }
 
 
-    public function testSetLogger()
+    public function testSetLogger(): void
     {
         $logger = new Class extends AbstractLogger {
             use LoggerAwareTrait;
@@ -42,7 +42,7 @@ class LoggerAwareTraitTest extends TestCase
     }
 
 
-    public function testChaining()
+    public function testChaining(): void
     {
         $result = $this->class->setLogger(new NullLogger());
         $this->assertSame($this->class, $result);
