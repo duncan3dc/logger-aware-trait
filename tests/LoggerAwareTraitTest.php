@@ -28,7 +28,7 @@ final class LoggerAwareTraitTest extends TestCase
 
     public function testSetLogger(): void
     {
-        $logger = new Class extends AbstractLogger {
+        $logger = new class extends AbstractLogger {
             use LoggerAwareTrait;
 
             public function log($level, $message, array $context = [])
