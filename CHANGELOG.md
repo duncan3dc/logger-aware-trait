@@ -5,6 +5,14 @@ Changelog
 
 --------
 
+## 1.2.0 - 2026-06-04
+
+### Added
+
+* [Support] Added support for PSR Log 2.0.
+
+--------
+
 ## 1.1.0 - 2026-06-03
 
 ### Changed

@@ -31,6 +31,9 @@ final class LoggerAwareTraitTest extends TestCase
         $logger = new class extends AbstractLogger {
             use LoggerAwareTrait;
 
+            /**
+             * @param mixed[] $context
+             */
             public function log($level, $message, array $context = [])
             {
             }
