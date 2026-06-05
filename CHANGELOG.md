@@ -5,6 +5,16 @@ Changelog
 
 --------
 
+## 1.3.0 - 2026-06-05
+
+### Changed
+
+* [Support] Dropped support for PHP 7.3, and 7.4.
+* [Support] Dropped support for PSR Log 1.0.
+* [Support] Added support for PSR Log 3.0.
+
+--------
+
 ## 1.2.0 - 2026-06-04
 
 ### Added
