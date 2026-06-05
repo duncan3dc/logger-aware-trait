@@ -34,7 +34,7 @@ final class LoggerAwareTraitTest extends TestCase
             /**
              * @param mixed[] $context
              */
-            public function log($level, $message, array $context = [])
+            public function log($level, string|\Stringable $message, array $context = []): void
             {
             }
         };
